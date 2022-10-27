@@ -1,0 +1,73 @@
+main, nav, header, article, section, footer{
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.nagykep>img, .kiskep img{
+    width: 100%;
+}
+
+.nagykep>img{
+    width: 100%;
+    display:grid ;
+    grid-template-columns: 1fr;
+
+}
+
+.kiskep{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+}
+
+nav>ul{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    text-decoration: none;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 80% auto;
+
+
+}
+.menu{
+    background-color: gray;
+    border: 1px solid black ;
+}
+
+nav>li{
+    border-left: 1 px solid black ;
+    text-transform: none;
+}
+
+a{
+    background-color: red;
+    text-decoration: none;
+}
+
+img{
+    border: 1px solid black;
+}
+
+
+@media  screen and (max-width: 800px) {
+    .kiskep{
+
+        grid-template-columns:  1fr;
+    }
+    
+    nav>ul{
+
+        grid-template-columns:  1fr;
+    }
+    
+    nav{
+
+        grid-template-columns:  1fr;
+    
+    }
+}
